@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>educateNepal</title>
+    <link rel="icon" href="logo.png">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- font awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+    <!-- imported font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- search icon cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="containerBox">
+
+        <!-- navigation bar -->
+        <header>
+            <nav class="navBar">
+                <div class="menuBox">
+                    <div class="lines"></div>
+                    <div class="lines"></div>
+                    <div class="lines"></div>
+                </div>
+
+                <div class="logoBox">
+                    <h2>educateNepal</h2>
+                </div>
+
+                <div class="midNavBox">
+                    <div class="navElem">
+                        <a href="./index.html">Home</a>
+                    </div>
+                    <div class="navElem">
+                        <a href="../aboutUs/index.html">About us</a>
+                    </div>
+                    <div class="navElem">
+                        <a href="../teacherInfo/index.html">Our instructors</a>
+                    </div>
+                    <div class="navElem">
+                        <a href="../courseDetails/courseDetail.html">Courses</a>
+                    </div>
+                    <div class="navElem">
+                        <a href="../contactPage/index.html">Contact us</a>
+                    </div>
+                </div>
+                <div class="signInBox">
+                    <a href="../login/loginform.html">
+                        <button>Sign In</button>
+                    </a>
+                </div>
+            </nav>
+        </header>
+
+        <!-- homePage section -->
+        <section class="mainSection">
+            <div class="contentBox">
+                <div class="primaryTitle">
+                    <p>Digital Learning</p>
+                </div>
+                <div class="secondaryTitle">
+                    <p>Choose among various subjects for the kids.</p>
+                </div>
+                <div class="searchField">
+                    <div class="inputBox">
+                        <input type="text" placeholder="Search Courses...">
+                    </div>
+                    <div class="btnBox">
+                        <button><i class="fa fa-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- popular courses section -->
+        <section class="popularCourses">
+
+            <div class="courses course1">
+                <a href="../Video section/index.html">
+                    <h2>Robotics</h2>
+                    <div class="content">
+                        <h1>Robotics</h1>
+                        <p>Learn more about robotics...</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="courses course2">
+                <a href="../Video section/index.html">
+                    <h2>Blockchain</h2>
+                    <div class="content">
+                        <h1>Blockchain</h1>
+                        <p>Learn more about blockchain</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="courses course3">
+                <a href="../Video section/index.html">
+                    <h2>A.I.</h2>
+                    <div class="content">
+                        <h1>A.I.</h1>
+                        <p>Learn more about A.I.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="courses course4">
+                <a href="../Video section/index.html">
+                    <h2>History</h2>
+                    <div class="content">
+                        <h1>History</h1>
+                        <p>Learn more about history</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- theme - Unlock the power of digital learning -->
+        <section class="ourTheme">
+            <div class="primaryTheme">
+                <p>educateNepal - Learn digitally</p>
+            </div>
+            <div class="secondaryTheme">
+                <p>Unlock the power of digital learning; every click takes you closer to your dreams.</p>
+            </div>
+        </section>
+
+        <!-- new courses section -->
+        <section class="newCourses">
+            <div class="coursePhysics newCourseElem">
+                <div class="courseLogo newCourse1"></div>
+                <p>Dive deep into the world of physics with our comprehensive courses covering topics from classical mechanics to quantum physics.</p>
+            </div>
+            <div class="courseInternet newCourseElem">
+                <div class="courseLogo newCourse2"></div>
+                <p>Learn about the latest advancements in internet technologies, including web development, networking, and cybersecurity.</p>
+            </div>
+            <div class="courseCreativity newCourseElem">
+                <div class="courseLogo newCourse3"></div>
+                <p>Enhance your creativity with courses in digital art, music production, and graphic design, tailored for all skill levels.</p>
+            </div>
+        </section>
+
+        <!-- main courses section -->
+        <section class="mainCourse">
+            <div class="courseHeading">
+                <h1>Courses</h1>
+            </div>
+            <div class="courseMenu">
+                <div class="featuredCourse">
+                    <a href="#" id="featuredCourse" onclick="featuredCourse()">Featured Course</a>
+                </div>
+                <div class="popularCourse">
+                    <a href="#" id="popularCourse" onclick="popularCourse()">Popular Courses</a>
+                </div>
+                <div class="technicalCourse">
+                    <a href="#" onclick="technicalCourse()">Technical Course</a>
+                </div>
+            </div>
+
+            <div class="courseSection">
+                <div class="courseElem">
+                    <div class="courseImg popularCourse-AI"></div>
+                    <div class="courseDescription">
+                        <p>Explore the fundamentals of AI, machine learning, and neural networks.</p>
+                    </div>
+                    <div class="viewMoreBtn">
+                        <button>View more..</button>
+                    </div>
+                </div>
+
+                <div class="courseElem">
+                    <div class="courseImg popularCourse-DigitalFootprint"></div>
+                    <div class="courseDescription">
+                        <p>Learn about managing your online presence, protecting personal data.</p>
+                    </div>
+                    <div class="viewMoreBtn">
+                        <button>View more..</button>
+                    </div>
+                </div>
+
+                <div class="courseElem">
+                    <div class="courseImg popularCourse-Economy"></div>
+                    <div class="courseDescription">
+                        <p> Delve into microeconomics and macroeconomics, and financial trends.</p>
+                    </div>
+                    <div class="viewMoreBtn">
+                        <button>View more..</button>
+                    </div>
+                </div>
+
+                <div class="courseElem">
+                    <div class="courseImg popularCourse-MachineLearning"></div>
+                    <div class="courseDescription">
+                        <p>Gain hands-on experience with data analysis, and predictive modeling.</p>
+                    </div>
+                    <div class="viewMoreBtn">
+                        <button>View more..</button>
+                    </div>
+                </div>
+
+                <div class="courseElem">
+                    <div class="courseImg popularCourse-SolarSystem"></div>
+                    <div class="courseDescription">
+                        <p>Explore the wonders of our solar system, latest space explorations</p>
+                    </div>
+                    <div class="viewMoreBtn">
+                        <button>View more..</button>
+                    </div>
+                </div>
+
+                <div class="courseElem">
+                    <div class="courseImg popularCourse-Medical"></div>
+                    <div class="courseDescription">
+                        <p>Understand the basics of human anatomy, medical terminologies</p>
+                    </div>
+                    <div class="viewMoreBtn">
+                        <button>View more..</button>
+                    </div>
+                </div>
+
+                <div class="courseElem">
+                    <div class="courseImg popularCourse-DigitalFootprint"></div>
+                    <div class="courseDescription">
+                        <p>Learn about managing your online presence, protecting personal data</p>
+                    </div>
+                    <div class="viewMoreBtn">
+                        <button>View more..</button>
+                    </div>
+                </div>
+
+                <div class="courseElem">
+                    <div class="courseImg popularCourse-SolarSystem"></div>
+                    <div class="courseDescription">
+                        <p>Explore the wonders of our solar system, latest space explorations.</p>
+                    </div>
+                    <div class="viewMoreBtn">
+                        <button>View more..</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="popularCourseSection">
+                <div class="courseElem">
+                    <div class="courseImg popularCourse-SolarSystem"></div>
+                    <div class="courseDescription">
+                        <p>Lorem ipsuonsectetur adipisicing elit. Iusto dolores illum omnis dolorem. Sit, consequuntur!</p>
+                    </div>
+                </div>
+
+                <div class="courseElem">
+                    <div class="courseImg popularCourse-AI"></div>
+                    <div class="courseDescription">
+                        <p>Lorem ipsum dolor sit amet c Sit, consequuntur! Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+
+                <div class="courseElem">
+                    <div class="courseImg popularCourse-Economy"></div>
+                    <div class="courseDescription">
+                        <p>Lorem ipsum dolor sdolores illum omnis dolorem. Sit, consequuntur!</p>
+                    </div>
+                </div>
+
+                <div class="courseElem">
+                    <div class="courseImg popularCourse-DigitalFootprint"></div>
+                    <div class="courseDescription">
+                        <p>Lorem ipsum dolor sit amet cdolores illum omnis dolorem. Sit, consequuntur!</p>
+                    </div>
+                </div>
+
+                <div class="courseElem">
+                    <div class="courseImg popularCourse-MachineLearning"></div>
+                    <div class="courseDescription">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto . Sit, consequuntur!</p>
+                    </div>
+                </div>
+
+                <div class="courseElem">
+                    <div class="courseImg popularCourse-Medical"></div>
+                    <div class="courseDescription">
+                        <p>Lorem ipsum dolor sit amet usto dolores illum omnis dolorem. Sit, consequuntur!</p>
+                    </div>
+                </div>
+
+                <div class="courseElem">
+                    <div class="courseImg popularCourse-SolarSystem"></div>
+                    <div class="courseDescription">
+                        <p>Lorem ipsuonsectetur adipisicing elit. Iusto dolores illum omnis dolorem. Sit, consequuntur!</p>
+                    </div>
+                </div>
+
+                <div class="courseElem">
+                    <div class="courseImg popularCourse-DigitalFootprint"></div>
+                    <div class="courseDescription">
+                        <p>Lorem ipsum dolor sit amet cdolores illum omnis dolorem. Sit, consequuntur!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- quiz section -->
+        <section class="quizSection">
+            <div class="quizParaBtn">
+                <p>Every quiz is a chance to learn something new.</p>
+                <a href="../quiz/index.html">
+                    <button>Play Quiz</button>
+                </a>
+            </div>
+        </section>
+
+        <!-- our students love us -->
+        <section class="parentStudent">
+            <div class="parentStudentTitle">
+                <h1>Our Students and Parents Love us</h1>
+            </div>
+            <div class="ourInfo">
+                <div class="Info">
+                    <div class="infoIcon">
+                        <i class="fa-solid fa-book"></i>
+                    </div>
+                    <div class="infoDesc">
+                        <h1>100+</h1>
+                        <h3>Courses</h3>
+                    </div>
+                </div>
+
+                <div class="Info">
+                    <div class="infoIcon">
+                        <i class="fa-solid fa-video"></i>
+                    </div>
+                    <div class="infoDesc">
+                        <h1>25,000+</h1>
+                        <h3>Courses</h3>
+                    </div>
+                </div>
+
+                <div class="Info">
+                    <div class="infoIcon">
+                        <i class="fa-solid fa-file-lines"></i>
+                    </div>
+                    <div class="infoDesc">
+                        <h1>100+</h1>
+                        <h3>Plans</h3>
+                    </div>
+                </div>
+
+                <div class="Info">
+                    <div class="infoIcon">
+                        <i class="fa-solid fa-user-group"></i>
+                    </div>
+                    <div class="infoDesc">
+                        <h1>20,000+</h1>
+                        <h3>Active Learners</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- testimonials section -->
+        <section class="testimonial">
+            <div class="testimonialTitle">
+                <h1>Testimonies</h1>
+            </div>
+            <div class="testimoniesUserComment">
+                <div class="testimony">
+                    <div class="userProfile">
+                        <div class="profileImg"></div>
+                        <h1>Emily Smith</h1>
+                    </div>
+                    <div class="userComment">
+                        <p>"The course on AI was incredible! It covered all the fundamentals and advanced topics in detail. The instructors were knowledgeable and supportive throughout the course. Highly recommend it!"</p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimony">
+                    <div class="userProfile">
+                        <div class="profileImg"></div>
+                        <h1>Michael Johnson</h1>
+                    </div>
+                    <div class="userComment">
+                        <p>"I enrolled in the Digital Footprint course and learned so much about managing online presence. The content was engaging, and I found the practical assignments very useful. It exceeded my expectations."</p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimony">
+                    <div class="userProfile">
+                        <div class="profileImg"></div>
+                        <h1>Sarah Lee</h1>
+                    </div>
+                    <div class="userComment">
+                        <p>"The Machine Learning course was a game-changer for my career. The projects and hands-on exercises were particularly valuable, allowing me to apply the concepts in real-world scenarios."</p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer section -->
+        <footer>
+            <section class="footer">
+                <div class="socialMedia">
+                    <div class="socialMediaElem">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                    <div class="socialMediaElem">
+                        <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+                    </div>
+                    <div class="socialMediaElem">
+                        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                    </div>
+                    <div class="socialMediaElem">
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <div class="socialMediaElem">
+                        <a href="#"><i class="fa-solid fa-mobile-screen-button"></i></a>
+                    </div>
+                </div>
+                <div class="footerNavigation">
+                    <!-- midNavBox same as header navigation bar-->
+                    <div class="midNavBox">
+                        <div class="navElem">
+                            <a href="#">Home</a>
+                        </div>
+                        <div class="navElem">
+                            <a href="#">About us</a>
+                        </div>
+                        <div class="navElem">
+                            <a href="../adminPanel/adminPanel.html">Our instructors</a>
+                        </div>
+                        <div class="navElem">
+                            <a href="../courseDetails/courseDetail.html">Courses</a>
+                        </div>
+                        <div class="navElem">
+                            <a href="#">Contact us</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>Copyright 2023 © educateNepal | educateNepal.com</p>
+                </div>
+            </section>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

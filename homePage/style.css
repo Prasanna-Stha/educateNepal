@@ -1,0 +1,932 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    overflow-x: hidden;
+}
+
+
+/* large screen view CSS */
+
+.containerBox {
+    width: 100vw;
+    margin: auto;
+}
+
+
+/* navigation bar starts here */
+
+.navBar {
+    width: 80%;
+    height: fit-content;
+    padding: 16px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoBox {
+    width: fit-content;
+}
+
+.logoBox h2 {
+    color: #010f3f;
+}
+
+.menuBox {
+    width: fit-content;
+    display: none;
+}
+
+.lines {
+    width: 25px;
+    height: 3px;
+    margin: 6px;
+    background-color: #282727;
+    border-radius: 16px;
+}
+
+.midNavBox {
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    column-gap: 36px;
+}
+
+.navElem {
+    border-bottom: 0;
+    transition: .2s linear;
+}
+
+.midNavBox a {
+    text-decoration: none;
+    color: #282727;
+    font-size: 16px;
+    font-weight: 500;
+    transition: .5s ease;
+}
+
+.navElem:hover a {
+    font-weight: 600;
+    color: #010f3f;
+    position: relative;
+    top: -2px;
+}
+
+.signInBox {
+    width: fit-content;
+}
+
+.signInBox button {
+    width: 118px;
+    height: 40px;
+    border: none;
+    outline: none;
+    background-color: #010f3f;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.signInBox button:hover {
+    border: 2px solid #010f3f;
+    font-weight: 500;
+    background-color: #d9d9d9;
+    color: #010f3f;
+    transition: .2s linear;
+}
+
+
+/* navigation bar ends here */
+
+
+/* homepage starts here */
+
+.mainSection {
+    width: 100%;
+    height: 90vh;
+    background-color: #010f3f;
+    position: relative;
+}
+
+.contentBox {
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+}
+
+.primaryTitle {
+    width: fit-content;
+    margin: auto;
+    background-color: transparent;
+}
+
+.primaryTitle p {
+    background-color: transparent;
+    color: #fde509;
+    font-size: 56px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    text-align: center;
+}
+
+.secondaryTitle {
+    width: fit-content;
+    margin: auto;
+    background-color: transparent;
+}
+
+.secondaryTitle p {
+    background-color: transparent;
+    color: #d9d9d9;
+    text-align: center;
+}
+
+.searchField {
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    margin: 16px auto;
+    border-radius: 24px;
+}
+
+.inputBox {
+    background-color: transparent;
+    width: 40vw;
+}
+
+.inputBox input {
+    width: 100%;
+    height: 40px;
+    padding: 8px 16px;
+    font-size: 16px;
+    border-radius: 24px;
+    outline: none;
+    border: none;
+}
+
+.btnBox {
+    border-radius: 24px;
+}
+
+.btnBox button {
+    width: 60px;
+    height: 100%;
+    border-radius: 24px;
+    background-color: #0728D7;
+    border: none;
+}
+
+.btnBox button i {
+    color: white;
+    background-color: #0728D7;
+    font-size: 20px;
+}
+
+.infoPara {
+    background-color: transparent;
+    width: fit-content;
+    margin: auto;
+}
+
+.infoPara p {
+    text-align: center;
+    color: #d9d9d9;
+    background-color: transparent;
+}
+
+.popularCourses {
+    width: 70%;
+    margin: 24px auto;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.courses {
+    width: 200px;
+    height: 250px;
+    margin: 16px auto;
+    border: 1px solid grey;
+    border-radius: 16px;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    transition: 1s linear;
+}
+
+.courses::before {
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .4);
+    border-radius: 16px;
+}
+
+.course1 {
+    background-image: url('course-robotics.jpg');
+}
+
+.course2 {
+    background-image: url('course-blockchain.jpg');
+}
+
+.course3 {
+    background-image: url('course-AI.jpg');
+}
+
+.course4 {
+    background-image: url('course-history.jpg');
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .5);
+    transition: .3s linear;
+    text-align: center;
+}
+
+.courses h2 {
+    position: absolute;
+    bottom: 20px;
+    left: 15px;
+    background-color: transparent;
+    color: #d9d9d9;
+    font-size: 14px;
+}
+
+.content h1 {
+    color: #fde509;
+    font-size: 22px;
+    background-color: transparent;
+}
+
+.content p {
+    color: white;
+    background-color: transparent;
+    font-size: 16px;
+}
+
+.courses:hover .content {
+    opacity: 1;
+}
+
+.ourTheme {
+    width: 80%;
+    margin: 48px auto;
+}
+
+.primaryTheme {
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+}
+
+.primaryTheme p {
+    font-size: 32px;
+    color: #010f3f;
+    font-weight: 700;
+    letter-spacing: .1px;
+}
+
+.secondaryTheme p {
+    text-align: center;
+    font-size: 16px;
+    color: #010f3f;
+    font-weight: 600;
+}
+
+.newCourses {
+    width: 80%;
+    height: fit-content;
+    padding: 16px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.newCourseElem {
+    width: 350px;
+    text-align: center;
+    margin: auto;
+}
+
+.newCourseElem p {
+    width: 80%;
+    margin: auto;
+    font-size: 14px;
+    font-weight: 600;
+    color: #282727;
+}
+
+.courseLogo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 16px auto;
+    padding: 16px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 2px solid grey;
+}
+
+.newCourse1 {
+    background-image: url("reactIcon.webp");
+}
+
+.newCourse2 {
+    background-image: url("cyberSecurity.webp");
+}
+
+.newCourse3 {
+    background-image: url("bulb.png");
+}
+
+.mainCourse {
+    width: 80%;
+    height: fit-content;
+    margin: 16px auto;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.courseHeading h1 {
+    font-size: 40px;
+    text-align: center;
+    color: #010f3f;
+}
+
+.courseMenu div a:hover {
+    color: #010f3f;
+    font-weight: 700;
+}
+
+.courseMenu {
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 16px;
+}
+
+.courseMenu div {
+    height: fit-content;
+    overflow: hidden;
+}
+
+.courseMenu div a {
+    margin: 8px 16px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #282727;
+    padding: 4px;
+}
+
+.courseSection,
+.popularCourseSection {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.courseElem {
+    width: 235px;
+    height: 320px;
+    margin: 16px auto;
+    border-radius: 16px;
+    box-shadow: grey .5px .5px 10px .5px;
+    cursor: pointer;
+    overflow-y: hidden;
+}
+
+.courseElem:hover {
+    box-shadow: .8px .8px 15px .8px grey;
+}
+
+.courseElem:hover .courseImg {
+    transform: scale(1.03);
+    transition: .3s linear
+}
+
+.courseImg {
+    width: 235px;
+    height: 180px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 16px 16px 0 0;
+    position: relative;
+}
+
+.courseImg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.popularCourse-AI {
+    background-image: url('popular-course-AI.jpg');
+}
+
+.popularCourse-DigitalFootprint {
+    background-image: url('popular-course-digital-footprint.jpg');
+}
+
+.popularCourse-Economy {
+    background-image: url('popular-course-economy.jpg');
+}
+
+.popularCourse-MachineLearning {
+    background-image: url('popular-course-machine-learning.jpg');
+}
+
+.popularCourse-SolarSystem {
+    background-image: url('popular-course-medical.jpg');
+}
+
+.popularCourse-Medical {
+    background-image: url('popular-course-solar-system.jpg');
+}
+
+.courseDescription {
+    width: 235px;
+    height: fit-content;
+    padding: 16px 8px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.viewMoreBtn {
+    width: fit-content;
+    margin: 0 auto 16px;
+}
+
+.viewMoreBtn button {
+    width: fit-content;
+    height: fit-content;
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-size: 12px;
+    color: white;
+    background-color: #010f3f;
+    font-weight: bold;
+    /* background: transparent; */
+    border: none;
+    border-bottom: 2px solid #010f3f;
+    outline: none;
+    cursor: pointer;
+    transition: .1s linear;
+}
+
+.popularCourseSection {
+    display: none;
+}
+
+.quizSection {
+    width: 80%;
+    height: fit-content;
+    margin: auto;
+    padding: 16px;
+}
+
+.quizParaBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.quizParaBtn p {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.quizParaBtn button {
+    width: fit-content;
+    height: fit-content;
+    padding: 8px 24px;
+    border-radius: 8px;
+    font-size: 18px;
+    background-color: #010f3f;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: .1s linear;
+}
+
+.quizParaBtn button:hover {
+    background: transparent;
+    border: 2px solid #010f3f;
+    color: #010f3f;
+    font-weight: 500;
+}
+
+.parentStudent {
+    width: 100%;
+    height: fit-content;
+    margin: 32px 0;
+    padding: 16px;
+    background-color: #010f3f;
+}
+
+.parentStudentTitle {
+    width: 100%;
+    padding: 16px;
+    background: transparent;
+    margin: 24px 0 0;
+}
+
+.parentStudentTitle h1 {
+    background: transparent;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    color: #fde509;
+}
+
+.ourInfo {
+    width: 80%;
+    margin: 0 auto 24px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+.Info {
+    background: transparent;
+    width: 200px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.infoIcon {
+    height: fit-content;
+    padding: 16px;
+    background: transparent;
+}
+
+.infoIcon i {
+    font-size: 40px;
+    overflow: hidden;
+    background: transparent;
+    color: white;
+}
+
+.infoDesc {
+    background: transparent;
+}
+
+.infoDesc h1 {
+    background: transparent;
+    color: #fde509;
+    text-align: center;
+}
+
+.infoDesc h3 {
+    background: transparent;
+    color: white;
+    text-align: center;
+}
+
+.testimonial {
+    width: 80vw;
+    margin: 16px auto 24px;
+}
+
+.testimonialTitle {
+    width: 100%;
+    text-align: center;
+    margin: 16px 0;
+}
+
+.testimonialTitle h1 {
+    font-size: 32px;
+    color: #010f3f;
+}
+
+.testimoniesUserComment {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 24px 0;
+}
+
+.testimony {
+    width: 300px;
+    height: 400px;
+    padding: 16px;
+    background: transparent;
+    box-shadow: .5px .5px 20px .5px grey;
+    border-radius: 16px;
+    margin: 16px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.userProfile {
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    background: none;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.profileImg {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid #282727;
+    margin-bottom: 8px;
+    background-image: url('./bulb.png');
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.userComment {
+    height: 200px;
+    background: none;
+}
+
+.userProfile h1,
+.userComment p {
+    overflow: hidden;
+    background: none;
+    color: #d9d9d9;
+}
+
+.userProfile h1 {
+    font-size: 20px;
+    text-align: center;
+    color: #282727;
+}
+
+.userComment p {
+    font-size: 14px;
+    text-align: center;
+    color: #282727;
+}
+
+.rating {
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+.rating i {
+    color: #010f3f;
+    margin-right: 4px;
+    font-size: 20px;
+}
+
+
+/* footer section starts here */
+
+footer {
+    width: 100vw;
+    background-color: #111111;
+}
+
+.footer {
+    width: 100vw;
+    margin: auto;
+    height: fit-content;
+    padding: 16px 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background: transparent;
+}
+
+.socialMedia {
+    width: 30%;
+    margin: auto;
+    padding: 24px 0;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+}
+
+.socialMediaElem {
+    background: transparent;
+    /* margin: 8px 0; */
+}
+
+.socialMediaElem i {
+    font-size: 30px;
+    text-align: center;
+    background-color: transparent;
+    transition: .3s linear;
+}
+
+.socialMediaElem a {
+    background: transparent;
+    text-decoration: none;
+    color: white;
+}
+
+.socialMediaElem a:hover .socialMediaElem i {
+    font-size: 32px;
+    transform: scale(1.05)
+}
+
+.footerNavigation {
+    background-color: transparent;
+}
+
+.footerNavigation .midNavBox {
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+    background: transparent;
+}
+
+.footerNavigation .midNavBox .navElem {
+    background-color: transparent;
+}
+
+.footerNavigation .midNavBox .navElem a {
+    color: #d9d9d9;
+    background-color: transparent;
+}
+
+.copyright {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    margin: 16px 0 0;
+}
+
+.copyright p {
+    font-size: 12px;
+    color: white;
+    background-color: transparent;
+}
+
+
+/* css for medium screen device */
+
+@media only screen and (min-width: 800px) and (max-width: 1190px) {
+    .navBar {
+        width: 95%;
+    }
+    .logoBox h2 {
+        font-size: 18px;
+    }
+    .midNavBox .navElem a {
+        font-size: 14px;
+    }
+    .signInBox {
+        width: 14%;
+    }
+    .signInBox button {
+        width: 100px;
+        font-size: 12px;
+    }
+}
+
+
+/* small screen view CSS */
+
+@media only screen and (max-width: 799px) {
+    .navBar {
+        width: 95%;
+    }
+    .logoBox h2 {
+        font-size: 20px;
+        display: none;
+    }
+    .signInBox button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+    .menuBox {
+        display: block;
+    }
+    .midNavBox {
+        display: none;
+        flex-direction: column;
+        align-items: normal;
+    }
+    .mainSection {
+        height: 80vh;
+    }
+    .contentBox {
+        top: 40%;
+    }
+    .primaryTitle p {
+        font-size: 22px;
+    }
+    .secondaryTitle p {
+        font-size: 12px;
+        text-align: center;
+    }
+    .inputBox {
+        height: 30px;
+    }
+    .inputBox input {
+        width: 100%;
+        height: 100%;
+        font-size: 14px;
+    }
+    .quizParaBtn {
+        flex-direction: column;
+    }
+    .quizParaBtn p {
+        text-align: center;
+        font-size: 16px;
+    }
+    .quizParaBtn button {
+        height: fit-content;
+    }
+    .parentStudentTitle h1 {
+        font-size: 20px;
+    }
+    .infoDesc h1 {
+        font-size: 20px;
+    }
+    .infoDesc h3 {
+        font-size: 14px;
+    }
+    .infoIcon i {
+        font-size: 30px;
+    }
+    .socialMedia {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 476px) {
+    .quizParaBtn {
+        flex-direction: column;
+    }
+    .quizParaBtn p {
+        font-size: 14px;
+    }
+    .quizParaBtn button {
+        height: fit-content;
+    }
+    .ourInfo {
+        width: 100%;
+    }
+    .infoDesc h1 {
+        font-size: 16px;
+    }
+    .infoDesc h3 {
+        font-size: 12px;
+    }
+    .infoIcon i {
+        font-size: 20px;
+    }
+    .socialMedia {
+        width: 70%;
+    }
+}

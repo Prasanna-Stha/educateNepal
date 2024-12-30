@@ -1,0 +1,411 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    overflow-x: hidden;
+}
+
+.containerBox {
+    width: 100vw;
+    margin: auto;
+}
+
+
+/* navigation bar starts here */
+
+.navBar {
+    width: 80%;
+    height: fit-content;
+    padding: 16px;
+    margin: 16px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: .5px .5px 20px .5px grey;
+    border-radius: 8px;
+}
+
+.logoBox {
+    width: 20%;
+}
+
+.logoBox h2 {
+    color: #010f3f;
+}
+
+.logoBox img {
+    display: none;
+}
+
+.menuBox {
+    width: fit-content;
+    display: none;
+}
+
+.lines {
+    width: 25px;
+    height: 3px;
+    margin: 6px;
+    background-color: #282727;
+    border-radius: 16px;
+}
+
+.midNavBox {
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    column-gap: 36px;
+}
+
+.navElem {
+    border-bottom: 0;
+    transition: .2s linear;
+}
+
+.midNavBox a {
+    text-decoration: none;
+    color: #282727;
+    font-size: 16px;
+    font-weight: 500;
+    transition: .5s ease;
+}
+
+.midNavBox a:hover {
+    font-weight: 600;
+    color: #010f3f;
+    position: relative;
+    top: -2px;
+}
+
+.signInBox {
+    width: fit-content;
+}
+
+.signInBox button {
+    width: 118px;
+    height: 40px;
+    border: none;
+    outline: none;
+    background-color: #010f3f;
+    color: #f0f0f0;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.signInBox button:hover {
+    border: 2px solid #010f3f;
+    font-weight: 500;
+    background-color: #f0f0f0;
+    color: #010f3f;
+    transition: .2s linear;
+}
+
+
+/* nav bar ends here */
+
+.titleBox {
+    width: 80%;
+    margin: auto;
+    padding: 16px;
+    color: #282727;
+}
+
+.courses {
+    width: 80%;
+    margin: auto;
+    padding: 16px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 32px;
+}
+
+.courseDetail {
+    width: 90%;
+    height: 380px;
+    box-shadow: .5px .5px 20px .5px grey;
+    background-image: linear-gradient(to left, #010f3f, white);
+    border-radius: 24px;
+}
+
+.courseDetail:hover {
+    box-shadow: 1px 1px 20px 1px grey;
+}
+
+.courseImgBox {
+    width: 100%;
+    height: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 24px;
+    background: #010f3f;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.courseImgBox img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+}
+
+.courseInfo {
+    width: 100%;
+    height: 50%;
+    background-color: white;
+    border-radius: 24px 24px 24px 0;
+}
+
+.courseDescription p,
+.courseDescription,
+.courseTitle h2,
+.courseTitle,
+.viewMoreBtn {
+    background-color: white;
+}
+
+.courseTitle {
+    width: 100%;
+    padding: 8px;
+    border-radius: 24px;
+}
+
+.courseTitle h2 {
+    font-size: 18px;
+    text-align: center;
+}
+
+.courseDescription {
+    width: 100%;
+    margin: 4px 0 8px 0;
+}
+
+.courseDescription p {
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: .1px;
+    padding: 6px;
+}
+
+.viewMoreBtn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 16px 0;
+}
+
+.viewMoreBtn button {
+    width: 150px;
+    height: 35px;
+    background-color: #010f3f;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+/* footer section starts here */
+
+footer {
+    width: 100vw;
+    background-color: #111111;
+}
+
+.footer {
+    width: 100vw;
+    margin: auto;
+    height: fit-content;
+    padding: 16px 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background: transparent;
+}
+
+.socialMedia {
+    width: 30%;
+    margin: auto;
+    padding: 24px 0;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+}
+
+.socialMediaElem {
+    background: transparent;
+}
+
+.socialMediaElem i {
+    font-size: 30px;
+    text-align: center;
+    background-color: transparent;
+    transition: .3s linear;
+}
+
+.socialMediaElem a {
+    background: transparent;
+    text-decoration: none;
+    color: white;
+}
+
+.socialMediaElem a:hover .socialMediaElem i {
+    font-size: 32px;
+    transform: scale(1.05)
+}
+
+.footerNavigation {
+    background-color: transparent;
+}
+
+.footerNavigation .midNavBox {
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+    background: transparent;
+}
+
+.footerNavigation .midNavBox .navElem {
+    background-color: transparent;
+}
+
+.footerNavigation .midNavBox .navElem a {
+    color: #d9d9d9;
+    background-color: transparent;
+}
+
+.copyright {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    margin: 16px 0 0;
+}
+
+.copyright p {
+    font-size: 12px;
+    color: white;
+    background-color: transparent;
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1100px) {
+    .logoBox h2 {
+        display: none;
+    }
+    .logoBox img {
+        width: 60px;
+        height: 60px;
+        display: block;
+    }
+    .signInBox {
+        display: none;
+    }
+    .menuBox {
+        display: block;
+    }
+    .midNavBox {
+        display: none;
+        flex-direction: column;
+        align-items: normal;
+    }
+    .courses {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .courseDetail {
+        width: 95%;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    .navBar {
+        width: 95%;
+    }
+    .logoBox h2 {
+        font-size: 18px;
+        display: none;
+    }
+    .logoBox h2 {
+        width: 60px;
+        height: 60px;
+        display: block;
+    }
+    .midNavBox .navElem a {
+        font-size: 14px;
+    }
+    .signInBox button {
+        width: 100px;
+        font-size: 12px;
+    }
+    .signInBox {
+        width: 14%;
+        display: none;
+    }
+    .menuBox {
+        display: block;
+    }
+    .midNavBox {
+        display: none;
+        flex-direction: column;
+        align-items: normal;
+    }
+    .courses {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .courseDetail {
+        width: 95%;
+        margin: auto;
+    }
+    .socialMedia {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .navBar {
+        width: 95%;
+    }
+    .logoBox h2 {
+        display: none;
+    }
+    .logoBox img {
+        width: 60px;
+        height: 60px;
+        display: block;
+    }
+    .signInBox {
+        display: none;
+    }
+    .menuBox {
+        display: block;
+    }
+    .midNavBox {
+        display: none;
+        flex-direction: column;
+        align-items: normal;
+    }
+    .logoBox h2 {
+        font-size: 20px;
+    }
+    .courses {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        margin: auto;
+    }
+    .courseDetail {
+        margin: auto;
+        width: 90%;
+        grid-gap: 24px;
+    }
+    .socialMedia {
+        width: 50%;
+    }
+}
